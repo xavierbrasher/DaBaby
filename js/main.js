@@ -9,13 +9,8 @@ function sleep(seconds) {
   } while (currentDate - date < milliseconds);
 }
 
-function switchImage() {
-  audio.document.getElementById("letsGo").innerHTML =
-    '<img src="img/before.png" />';
-}
-
 function daBaby() {
   audio.play();
   sleep(2.2);
-  document.getElementById("letsGo").innerHTML = '<img src="img/after1.png" />';
+  document.getElementById("letsGo").innerHTML = '<img src="img/after.png" />';
 }
