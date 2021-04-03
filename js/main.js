@@ -10,15 +10,12 @@ function sleep(seconds) {
 }
 
 function switchImage() {
-  document.getElementById("letsGo").innerHTML = '<img src="/img/before.png" />';
+  audio.document.getElementById("letsGo").innerHTML =
+    '<img src="img/before.png" />';
 }
 
 function daBaby() {
   audio.play();
   sleep(2.2);
   document.getElementById("letsGo").innerHTML = '<img src="img/after1.png" />';
-  sleep(2);
-  document.getElementById("letsGo").innerHTML = '<img src="img/after.png" />';
-  sleep(1);
-  document.getElementById("letsGo").innerHTML = '<img src="/img/before.png" />';
 }
