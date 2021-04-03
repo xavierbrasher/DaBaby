@@ -1,5 +1,3 @@
-let audio = new Audio("lets-go.mp3");
-
 function sleep(seconds) {
   let milliseconds = seconds * 1000;
   const date = Date.now();
@@ -8,9 +6,13 @@ function sleep(seconds) {
     currentDate = Date.now();
   } while (currentDate - date < milliseconds);
 }
-
+let audio = new Audio("lets-go.mp3");
 function daBaby() {
   audio.play();
   sleep(2.2);
   document.getElementById("letsGo").innerHTML = '<img src="img/after.png" />';
+}
+
+function reset() {
+  document.getElementById("letsGo").innerHTML = '<img src="img/before.png" />';
 }
