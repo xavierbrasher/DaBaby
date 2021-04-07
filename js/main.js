@@ -6,13 +6,27 @@ function sleep(seconds) {
     currentDate = Date.now();
   } while (currentDate - date < milliseconds);
 }
-let audio = new Audio("lets-go.mp3");
+let letsgoo = new Audio("../music/lets-go.mp3");
+let sheeshSound = new Audio("../music/sheesh.mp3");
 function daBaby() {
-  audio.play();
+  letsgoo.play();
   sleep(2.2);
-  document.getElementById("letsGo").innerHTML = '<img src="img/after.png" />';
+  document.getElementById("letsGo").innerHTML =
+    '<img src="../img/after.png" />';
+}
+
+function sheesh() {
+  sheeshSound.play();
+  document.getElementById("id-sheesh").innerHTML =
+    '<img src="../img/afterSH.png" />';
 }
 
 function reset() {
-  document.getElementById("letsGo").innerHTML = '<img src="img/before.png" />';
+  document.getElementById("letsGo").innerHTML =
+    '<img src="../img/before.png" />';
+}
+
+function resetsh() {
+  document.getElementById("id-sheesh").innerHTML =
+    '<img src="../img/beforeSH.PNG" />';
 }

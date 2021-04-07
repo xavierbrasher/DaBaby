@@ -13,7 +13,18 @@ img {
   border: none;
   background: none;
 }
-
+.header {
+  margin-top: 10%;
+  padding: 0px;
+  text-align: center;
+  background-color: whitesmoke;
+  color: whitesmoke;
+  font-size: 10px;
+}
 body {
   background-color: whitesmoke;
+}
+a {
+  color: black;
+  font-style: normal;
 }

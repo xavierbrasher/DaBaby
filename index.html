@@ -4,16 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="Choose What Sound"
+      content="Choose What Sound You Would Like To Play!"
+    />
     <title>Dababy</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="icon" href="img/after.png" />
-
+    <style>
+      h1 {
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .header {
+        margin-top: 24%;
+        padding: 0px;
+        text-align: center;
+        background-color: whitesmoke;
+        color: whitesmoke;
+        font-size: 10px;
+      }
+    </style>
     <meta property="og:image" content="dababy" />
 
-    <meta
-      property="og:description"
-      content="Ey LETS GO"
-    />
+    <meta property="og:description" content="Ey LETS GO" />
 
     <meta
       property="og:url"
@@ -22,14 +38,20 @@
 
     <meta property="og:title" content="DaBaby" />
   </head>
-  </head>
   <body>
-    <script type="text/javascript" src="js/main.js"></script>
-    <div class="middle">
-      <button onclick="daBaby()" class="button1" id="letsGo">
-        <img src="img/before.png" />
+    <h1>Main Page: Choose the sound</h1>
+    <div class="header">
+      <button>
+        <a href="saying_things/letsGo.html">
+          I Still see the shadows in your room
+        </a>
       </button>
-      <button onclick="reset()">Reset</button>
+      <button>
+        <a href="saying_things/letsGo.html"> Lets Go </a>
+      </button>
+      <button>
+        <a href="saying_things/sheesh.html"> sheesh </a>
+      </button>
     </div>
   </body>
 </html>
